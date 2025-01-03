@@ -1,13 +1,13 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('go to url', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/v1/');
 
   // Expect a title "to contain" a substring.
   //await expect(page).toHaveTitle(/Playwright/);
 });
 
-test('get started link', async ({ page }) => {
+test('login', async ({ page }) => {
   //login: standard_user
   //mdp: secret_sauce
 
@@ -19,6 +19,7 @@ test('get started link', async ({ page }) => {
   await page.locator('#login-button').click();
 
 
+  
 
 
 

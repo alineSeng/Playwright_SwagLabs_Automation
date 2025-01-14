@@ -1,6 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-const descriptionProduit = "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection." ;
 
+class VariableElements {
 
+     descriptionProduit() {
+        return ("carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.")
+    }
+
+}
+export default VariableElements;
 

@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test'
 import { login } from '../Login/LoginFunctionsPage';
-import { add_to_cart } from '../Inventory/InventoryFunctionsPage';
-import { cart } from '../Cart/CartFunctionsPage';
-import { checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
+import { add_to_cart, check_SauceLabsBackpack_Product } from '../Inventory/InventoryFunctionsPage';
+import { cart, check_price_product, check_quantity_product } from '../Cart/CartFunctionsPage';
+import { check_shipping_information, check_summary_quantity_product, checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
 
 test.describe('Checkout', () => {
     
@@ -17,6 +17,18 @@ test.describe('Checkout', () => {
         await checkoutInformation(page, 'aline', 'seng', '59000');
     });
     
+    test ('Checkout Owerview Confirmation ', async ({page}) => {
+        await add_to_cart(page);
+        await cart(page);
+        await checkout(page);
+        await checkoutInformation(page, 'aline', 'seng', '59000');
+
+        await check_summary_quantity_product(page);
+        await check_shipping_information(page);
+
+        await check_SauceLabsBackpack_Product(page);
+
+    });
 
     
 

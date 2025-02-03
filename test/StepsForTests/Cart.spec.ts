@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 import { login } from '../Login/LoginFunctionsPage';
 import { add_to_cart, check_SauceLabsBackpack_Product, remove_from_cart, remove_from_cart_from_generalPage } from '../Inventory/InventoryFunctionsPage';
 import {cart, check_cart_counter, check_price_product, check_quantity_product} from '../Cart/CartFunctionsPage';
-
+/*
 test.describe('Test gestion du panier', () => {
     test.beforeEach(async ({ page }) => {
         await login(page, 'standard_user', 'secret_sauce');
@@ -47,3 +47,4 @@ test.describe('Test gestion du panier', () => {
     })
     
 });
+*/

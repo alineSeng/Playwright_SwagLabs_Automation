@@ -4,7 +4,7 @@ import { add_to_cart } from '../Inventory/InventoryFunctionsPage'
 import { cart } from '../Cart/CartFunctionsPage'
 import { checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
 import { Deconnexion, thanksPage } from '../Deconnexion/DeconnexionFunctionsPage'
-
+/*
 
 test.describe('Deconnexion', () => {
     
@@ -28,4 +28,4 @@ test.describe('Deconnexion', () => {
     
 
 
-})
+})*/

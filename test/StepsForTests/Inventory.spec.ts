@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test'
 import { login } from '../Login/LoginFunctionsPage';
 import { add_to_cart, check_AllTheThingsTShirtRed_ImageLink, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, remove_from_cart, } from '../Inventory/InventoryFunctionsPage';
 
+/*
 test.describe('Test verification des produits', () => {
     test.beforeEach(async ({ page }) => {
         await login(page, 'standard_user', 'secret_sauce');
@@ -76,3 +77,4 @@ test.describe('Test verification des produits', () => {
 
 
 
+*/

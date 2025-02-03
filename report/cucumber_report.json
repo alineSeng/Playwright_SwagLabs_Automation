@@ -1,0 +1,90 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "connexion-à-l'application;testtttt",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "testtttt",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 807464799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Test de connexion Pass",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 573838299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 87048500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "connexion-à-l'application;testtttt",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "testtttt",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216162500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "aaaa",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 74805300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "connexion-à-l'application",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Connexion à l'application",
+    "tags": [],
+    "uri": "features\\login.feature"
+  }
+]

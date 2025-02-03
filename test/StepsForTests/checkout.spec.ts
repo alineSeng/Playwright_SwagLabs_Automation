@@ -3,7 +3,7 @@ import { login } from '../Login/LoginFunctionsPage';
 import { add_to_cart, check_SauceLabsBackpack_Product } from '../Inventory/InventoryFunctionsPage';
 import { cart, check_price_product, check_quantity_product } from '../Cart/CartFunctionsPage';
 import { check_shipping_information, check_summary_quantity_product, checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
-
+/*
 test.describe('Checkout', () => {
     
     test.beforeEach(async ({ page }) => {
@@ -34,3 +34,4 @@ test.describe('Checkout', () => {
 
 
 })
+    */

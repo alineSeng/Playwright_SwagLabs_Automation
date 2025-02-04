@@ -7,12 +7,12 @@ import './hooks';  // Importation des hooks pour initialiser la page
 let browser: Browser;
 let page: Page;
 
-Given('Test de connexion Pass', async function () {
+Given('Log in as user', async function () {
     const page = this.page;  // Utilisation de la page Playwright
     await login(page, 'standard_user', 'secret_sauce');
 });
 
-Given('Test de connexion Fail', async function () {
+Given('Login Fail', async function () {
     // Cette étape va simuler une connexion échouée avec des identifiants invalides
     page = this.page;
     await loginFail(page, 'faux_username', 'faux_password');  // Appel de la fonction loginFail avec de mauvais identifiants

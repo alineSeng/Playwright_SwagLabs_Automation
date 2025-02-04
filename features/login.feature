@@ -2,7 +2,7 @@
 Feature: Connexion à l'application
 
   Scenario: testtttt
-    Given Test de connexion Pass
+    Given Log in as user
 
   Scenario: testtttt
-    Given aaaa
+    Given Login Fail

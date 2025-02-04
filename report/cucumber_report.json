@@ -14,20 +14,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 807464799
+              "duration": 207062500
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "Test de connexion Pass",
+            "name": "Log in as user",
             "match": {
               "location": "test\\StepsForTests\\login.steps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 573838299
+              "duration": 4140347999
             }
           },
           {
@@ -35,7 +35,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 87048500
+              "duration": 61329099
             }
           }
         ],
@@ -54,17 +54,20 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 216162500
+              "duration": 196590700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "aaaa",
+            "name": "Login Fail",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:15"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 268623099
             }
           },
           {
@@ -72,7 +75,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 74805300
+              "duration": 51352299
             }
           }
         ],

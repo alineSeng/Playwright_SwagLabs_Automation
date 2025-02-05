@@ -1,7 +1,6 @@
 import { Before, Given, When, Then } from '@cucumber/cucumber';
 import { login, loginFail } from '../Login/LoginFunctionsPage'; // Supposons que ces fonctions sont déjà définies.
-import { expect } from '@playwright/test';
-import { chromium, Browser, Page } from '@playwright/test';  // Utilise cette importation pour éviter les problèmes de résolution
+import { chromium, Browser, Page, expect } from '@playwright/test';  // Utilise cette importation pour éviter les problèmes de résolution
 import './hooks';  // Importation des hooks pour initialiser la page
 
 let browser: Browser;

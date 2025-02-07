@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --require-module ts-node/register --require test/StepsForTests/**/*.ts --format json:report/cucumber_report.json",
-    "report": "ts-node test/reports/generateReport.ts"
+    "report": "ts-node test/reports/generateReport.ts",
+    "tests": "cucumber-js --config cucumber.ts"
+
   },
   "keywords": [],
   "author": "",

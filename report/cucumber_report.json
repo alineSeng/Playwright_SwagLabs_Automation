@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "inventory-functions;verification-de-la-liste-des-produits",
+        "id": "inventory-functions;check-list-of-all-products",
         "keyword": "Scenario",
         "line": 4,
-        "name": "Verification de la liste des produits",
+        "name": "Check list of all products",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 424989500
+              "duration": 373988099
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4051201900
+              "duration": 331037100
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 6,
             "name": "Verification de la liste des produits",
             "match": {
-              "location": "test\\StepsForTests\\inventory.steps.ts:10"
+              "location": "test\\StepsForTests\\inventory.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 139844599
+              "duration": 64966800
             }
           },
           {
@@ -48,7 +48,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 87972400
+              "duration": 97014000
             }
           }
         ],
@@ -57,17 +57,17 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-add-saucelabsbackpack-add-saucelabsonesie-on-cart",
+        "id": "inventory-functions;as-a-user,-i-want-to-add-items-(saucelabsbackpack-add-saucelabsonesie)-on-cart",
         "keyword": "Scenario",
         "line": 8,
-        "name": "As a user, I want to add SauceLabsBackpack add SauceLabsOnesie on cart",
+        "name": "As a user, I want to add items (SauceLabsBackpack add SauceLabsOnesie) on cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 223877299
+              "duration": 211416899
             }
           },
           {
@@ -80,7 +80,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 244948899
+              "duration": 317694900
             }
           },
           {
@@ -88,29 +88,26 @@
             "keyword": "When ",
             "line": 10,
             "name": "the user click on SauceLabsBackpack \"ADD TO CART\" button",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:40"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "the user click on SauceLabsOnesie \"ADD TO CART\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 290508200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
-            "name": "we can see 2 quantity on cart",
+            "line": 11,
+            "name": "1 quantity is adding to cart",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:44"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 3523299,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\matchers\\expect.js:227:37)\n    at Object.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:47:22)\n    at fulfilled (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:5:58)"
             }
           },
           {
@@ -118,7 +115,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57778899
+              "duration": 67870600
             }
           }
         ],
@@ -127,46 +124,36 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-add-and-remove-items-on-cart",
+        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsonesie)-on-cart",
         "keyword": "Scenario",
-        "line": 14,
-        "name": "As a user, I want to add and remove items on cart",
+        "line": 13,
+        "name": "As a user, I want to remove items (SauceLabsOnesie) on cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 223462700
+              "duration": 209586699
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
+            "line": 14,
             "name": "Log in as user",
             "match": {
               "location": "test\\StepsForTests\\login.steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 265264299
+              "duration": 249256200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 16,
-            "name": "the user click on SauceLabsBackpack \"ADD TO CART\" button",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 17,
+            "line": 15,
             "name": "the user click on SauceLabsOnesie \"ADD TO CART\" button",
             "result": {
               "status": "undefined",
@@ -176,7 +163,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 18,
+            "line": 16,
             "name": "the user click on SauceLabsOnesie \"REMOVE\" button",
             "result": {
               "status": "undefined",
@@ -186,8 +173,8 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "we can see 1 quantity on cart",
+            "line": 17,
+            "name": "the cart should be empty",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -198,7 +185,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 55165699
+              "duration": 51017400
             }
           }
         ],
@@ -207,37 +194,57 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-order-items-list-by-price(desc)",
+        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsonesie)-once-from-the-cart",
         "keyword": "Scenario",
-        "line": 21,
-        "name": "As a user, I want to order items list by price(desc)",
+        "line": 19,
+        "name": "As a user, I want to remove items (SauceLabsOnesie) once from the cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 196092299
+              "duration": 185559800
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 22,
+            "line": 20,
             "name": "Log in as user",
             "match": {
               "location": "test\\StepsForTests\\login.steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 281425200
+              "duration": 313274200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
+            "line": 21,
+            "name": "the user click on SauceLabsOnesie \"ADD TO CART\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the user click on the cart icon",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
             "line": 23,
-            "name": "the user click on \"Price (high to low)",
+            "name": "the user click on the \"REMOVE\" button for the product",
             "result": {
               "status": "undefined",
               "duration": 0
@@ -247,6 +254,76 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
+            "name": "the cart should be empty",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47161100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-functions;as-a-user,-i-want-to-sorting-products-from-highest-to-lowest-price",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "As a user, I want to sorting products from highest to lowest price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 182349999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "Log in as user",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 232474099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "the user select the filter on the \"Price (high to low)\" option",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the product list should be sorted in descending order of the price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
             "name": "we can see SauceLabsFleeceJacket in the top rank of the list",
             "result": {
               "status": "undefined",
@@ -256,7 +333,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 25,
+            "line": 31,
             "name": "SauceLabsFleeceJacket price is = $49.99",
             "result": {
               "status": "undefined",
@@ -266,7 +343,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 26,
+            "line": 32,
             "name": "we can see SauceLabsBackpack in the second rank of the list",
             "result": {
               "status": "undefined",
@@ -276,7 +353,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 27,
+            "line": 33,
             "name": "SauceLabsBackpack price is = $29.99",
             "result": {
               "status": "undefined",
@@ -288,7 +365,107 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60371299
+              "duration": 51761900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "inventory-functions;as-a-user,-i-want-to-sorting-products-from-lowest-to-highest-price",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "As a user, I want to sorting products from lowest to highest price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216759300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "Log in as user",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263289400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "the user select the filter on the \"Price (low to high)\" option",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the product list should be sorted in ascending order of the price",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "we can see SauceLabsBackpack in the top rank of the list",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "SauceLabsBackpack price is = $29.99",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "we can see SauceLabsFleeceJacket in the second rank of the list",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "SauceLabsFleeceJacket price is = $49.99",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63852500
             }
           }
         ],
@@ -302,96 +479,5 @@
     "name": "Inventory functions",
     "tags": [],
     "uri": "features\\inventory.feature"
-  },
-  {
-    "description": "",
-    "elements": [
-      {
-        "description": "",
-        "id": "connexion-à-l'application;je-veux-me-connecter-en-tant-qu'utilisateur",
-        "keyword": "Scenario",
-        "line": 4,
-        "name": "Je veux me connecter en tant qu'utilisateur",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 192682099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Log in as user",
-            "match": {
-              "location": "test\\StepsForTests\\login.steps.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 253891899
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 49177199
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "connexion-à-l'application;je-veux-me-connecter-avec-des-faux-identifiants",
-        "keyword": "Scenario",
-        "line": 7,
-        "name": "Je veux me connecter avec des faux identifiants",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 186826500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "Login Fail",
-            "match": {
-              "location": "test\\StepsForTests\\login.steps.ts:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 249092199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 46333699
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      }
-    ],
-    "id": "connexion-à-l'application",
-    "line": 2,
-    "keyword": "Feature",
-    "name": "Connexion à l'application",
-    "tags": [],
-    "uri": "features\\login.feature"
   }
 ]

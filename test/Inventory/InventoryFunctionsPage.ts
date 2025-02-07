@@ -93,6 +93,9 @@ export async function remove_from_cart (page: Page){
     await inventoryElementsPage.remove_Button(page);
 }
 
+export async function counter_cart (page: Page){
+    await inventoryElementsPage.counterShoppingCart(page);
+}
 
 
 

@@ -1,8 +1,9 @@
 import { Before, Given, When, Then } from '@cucumber/cucumber';
-import { add_to_cart, check_AllTheThingsTShirtRed_ImageLink, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, remove_from_cart, } from '../Inventory/InventoryFunctionsPage';
-import { chromium, Browser, Page, expect } from '@playwright/test'; 
-import { login} from '../Login/LoginFunctionsPage';
-import './hooks'; 
+import { add_to_cart, check_AllTheThingsTShirtRed_ImageLink, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, counter_cart, remove_from_cart, } from '../Inventory/InventoryFunctionsPage';
+import { chromium, Browser, Page, expect } from '@playwright/test';
+import { login } from '../Login/LoginFunctionsPage';
+import './hooks';
+import { features } from 'process';
 
 let browser: Browser;
 let page: Page;
@@ -35,3 +36,15 @@ Then('je vérifie le produit {string}', async function (productName) {
             throw new Error(`Produit inconnu: ${productName}`);
     }
 });
+
+When('the user click on SauceLabsBackpack "ADD TO CART" button', async function () {
+    await add_to_cart(this.page);
+});
+
+When('1 quantity is adding to cart', async function () {
+    let compteur: void;
+    compteur = await counter_cart(this.page);
+    expect(compteur).toBe(1);
+});
+
+

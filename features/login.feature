@@ -1,8 +1,8 @@
 
-Feature: Connexion à l'application
+Feature: Connexion on website
 
-  Scenario: Je veux me connecter en tant qu'utilisateur
+  Scenario: As a valid user, I want to connect to the website
     Given Log in as user
 
-  Scenario: Je veux me connecter avec des faux identifiants
+  Scenario: As a invalid user, my connection to the website is failed
     Given Login Fail

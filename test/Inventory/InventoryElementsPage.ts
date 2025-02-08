@@ -118,7 +118,7 @@ class InventoryElementsPage {
     }
     
     remove_Button_FromGeneralProductPage(page: Page){
-        return page.click('button.btn_secondary.cart_button', { force: true });
+        return page.click('button.btn_primary.btn_inventory');
     }
 
     remove_Button(page: Page){
@@ -133,7 +133,7 @@ class InventoryElementsPage {
     }
 
     counterShoppingCart(page: Page){
-        return page.locator('span.fa-layers-counter.shopping_cart_badge')
+        return page.locator('span.shopping_cart_badge');
     }
     
 

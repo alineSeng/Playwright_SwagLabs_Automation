@@ -4,6 +4,127 @@
     "elements": [
       {
         "description": "",
+        "id": "checkout-process;as-a-user,-i-want-to-succeed-in-my-order-process",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "As a user, I want to succeed in my order process",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 199251099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Log in as user",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1007500099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user has added items selected to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "the user click on the cart icon",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user click on the \"Checkout\" button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user enter his firstname \"Line\", his last name \"Sg\", and his postal code \"59000\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the user click on \"Continue\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user click on \"Finish\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "a confitmation message \"Thank you for your order!\" should be displayed",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 85114000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "checkout-process",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Checkout process",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "inventory-functions;check-list-of-all-products",
         "keyword": "Scenario",
         "line": 4,
@@ -14,7 +135,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 373988099
+              "duration": 196407400
             }
           },
           {
@@ -27,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 331037100
+              "duration": 584021200
             }
           },
           {
@@ -40,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 64966800
+              "duration": 86249800
             }
           },
           {
@@ -48,7 +169,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 97014000
+              "duration": 68262899
             }
           }
         ],
@@ -57,17 +178,17 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-add-items-(saucelabsbackpack-add-saucelabsonesie)-on-cart",
+        "id": "inventory-functions;as-a-user,-i-want-to-add-items-(saucelabsbackpack)-on-cart",
         "keyword": "Scenario",
         "line": 8,
-        "name": "As a user, I want to add items (SauceLabsBackpack add SauceLabsOnesie) on cart",
+        "name": "As a user, I want to add items (SauceLabsBackpack) on cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 211416899
+              "duration": 198246199
             }
           },
           {
@@ -80,7 +201,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 317694900
+              "duration": 568809099
             }
           },
           {
@@ -93,7 +214,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 290508200
+              "duration": 237465799
             }
           },
           {
@@ -102,12 +223,11 @@
             "line": 11,
             "name": "1 quantity is adding to cart",
             "match": {
-              "location": "test\\StepsForTests\\inventory.steps.ts:44"
+              "location": "test\\StepsForTests\\inventory.steps.ts:53"
             },
             "result": {
-              "status": "failed",
-              "duration": 3523299,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31mundefined\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\matchers\\expect.js:227:37)\n    at Object.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:47:22)\n    at fulfilled (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:5:58)"
+              "status": "passed",
+              "duration": 11256899
             }
           },
           {
@@ -115,7 +235,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 67870600
+              "duration": 62046999
             }
           }
         ],
@@ -124,17 +244,17 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsonesie)-on-cart",
+        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsbackpack)-on-cart",
         "keyword": "Scenario",
         "line": 13,
-        "name": "As a user, I want to remove items (SauceLabsOnesie) on cart",
+        "name": "As a user, I want to remove items (SauceLabsBackpack) on cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 209586699
+              "duration": 205213600
             }
           },
           {
@@ -147,27 +267,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 249256200
+              "duration": 440043999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 15,
-            "name": "the user click on SauceLabsOnesie \"ADD TO CART\" button",
+            "name": "the user click on SauceLabsBackpack \"ADD TO CART\" button",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:40"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 267423299
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 16,
-            "name": "the user click on SauceLabsOnesie \"REMOVE\" button",
+            "name": "the user click on SauceLabsBackpack \"REMOVE\" button",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:44"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 97726599
             }
           },
           {
@@ -175,9 +301,13 @@
             "keyword": "Then ",
             "line": 17,
             "name": "the cart should be empty",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:69"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 12887399,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m3\u001b[39m\n    at Proxy.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\node_modules\\@playwright\\test\\node_modules\\playwright\\lib\\matchers\\expect.js:227:37)\n    at Object.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:79:35)\n    at fulfilled (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\test\\StepsForTests\\inventory.steps.ts:5:58)"
             }
           },
           {
@@ -185,7 +315,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 51017400
+              "duration": 75507400
             }
           }
         ],
@@ -204,7 +334,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 185559800
+              "duration": 182900600
             }
           },
           {
@@ -217,7 +347,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 313274200
+              "duration": 258956700
             }
           },
           {
@@ -255,8 +385,11 @@
             "keyword": "Then ",
             "line": 24,
             "name": "the cart should be empty",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:69"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -265,7 +398,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47161100
+              "duration": 63190299
             }
           }
         ],
@@ -284,7 +417,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 182349999
+              "duration": 192919600
             }
           },
           {
@@ -297,7 +430,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 232474099
+              "duration": 303394999
             }
           },
           {
@@ -365,7 +498,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 51761900
+              "duration": 53753199
             }
           }
         ],
@@ -384,7 +517,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 216759300
+              "duration": 176545500
             }
           },
           {
@@ -397,7 +530,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 263289400
+              "duration": 253190600
             }
           },
           {
@@ -465,7 +598,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 63852500
+              "duration": 65187100
             }
           }
         ],
@@ -479,5 +612,96 @@
     "name": "Inventory functions",
     "tags": [],
     "uri": "features\\inventory.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "connexion-on-website;as-a-valid-user,-i-want-to-connect-to-the-website",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "As a valid user, I want to connect to the website",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 189598600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Log in as user",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 277302300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 60313599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "connexion-on-website;as-a-invalid-user,-my-connection-to-the-website-is-failed",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "As a invalid user, my connection to the website is failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 204485899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "Login Fail",
+            "match": {
+              "location": "test\\StepsForTests\\login.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257867800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 50389600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "connexion-on-website",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Connexion on website",
+    "tags": [],
+    "uri": "features\\login.feature"
   }
 ]

@@ -5,15 +5,15 @@ Scenario: Check list of all products
     Given Log in as user
     When Verification de la liste des produits
 
-Scenario: As a user, I want to add items (SauceLabsBackpack add SauceLabsOnesie) on cart
+Scenario: As a user, I want to add items (SauceLabsBackpack) on cart
     Given Log in as user
     When the user click on SauceLabsBackpack "ADD TO CART" button
     Then 1 quantity is adding to cart
 
-Scenario: As a user, I want to remove items (SauceLabsOnesie) on cart
+Scenario: As a user, I want to remove items (SauceLabsBackpack) on cart
     Given Log in as user
-    When the user click on SauceLabsOnesie "ADD TO CART" button 
-    And the user click on SauceLabsOnesie "REMOVE" button 
+    When the user click on SauceLabsBackpack "ADD TO CART" button 
+    And the user click on SauceLabsBackpack "REMOVE" button 
     Then the cart should be empty
 
 Scenario: As a user, I want to remove items (SauceLabsOnesie) once from the cart

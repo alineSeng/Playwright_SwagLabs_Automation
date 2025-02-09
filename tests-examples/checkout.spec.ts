@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test'
-import { login } from '../Login/LoginFunctionsPage';
-import { add_to_cart, check_SauceLabsBackpack_Product } from '../Inventory/InventoryFunctionsPage';
-import { cart, check_price_product, check_quantity_product } from '../Cart/CartFunctionsPage';
-import { check_shipping_information, check_summary_quantity_product, checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
+import { login } from '../test/Login/LoginFunctionsPage';
+import { add_to_cart, check_SauceLabsBackpack_Product } from '../test/Inventory/InventoryFunctionsPage';
+import { cart, check_price_product, check_quantity_product } from '../test/Cart/CartFunctionsPage';
+import { check_shipping_information, check_summary_quantity_product, checkout, checkoutInformation } from '../test/Checkout/CheckoutFunctionsPage'
 /*
 test.describe('Checkout', () => {
     

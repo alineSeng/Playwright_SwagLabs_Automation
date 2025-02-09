@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test'
-import { login } from '../Login/LoginFunctionsPage';
-import { add_to_cart } from '../Inventory/InventoryFunctionsPage'
-import { cart } from '../Cart/CartFunctionsPage'
-import { checkout, checkoutInformation } from '../Checkout/CheckoutFunctionsPage'
-import { Deconnexion, thanksPage } from '../Deconnexion/DeconnexionFunctionsPage'
+import { login } from '../test/Login/LoginFunctionsPage';
+import { add_to_cart } from '../test/Inventory/InventoryFunctionsPage'
+import { cart } from '../test/Cart/CartFunctionsPage'
+import { checkout, checkoutInformation } from '../test/Checkout/CheckoutFunctionsPage'
+import { Deconnexion, thanksPage } from '../test/Deconnexion/DeconnexionFunctionsPage'
 /*
 
 test.describe('Deconnexion', () => {

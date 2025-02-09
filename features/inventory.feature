@@ -25,7 +25,7 @@ Scenario: As a user, I want to remove items (SauceLabsOnesie) once from the cart
 
 Scenario: As a user, I want to sorting products from highest to lowest price
     Given Log in as user 
-    When the user select the filter on the "Price (high to low)" option 
+    When the user select the filter on the "Price high to low" option 
     Then the product list should be sorted in descending order of the price
     And we can see SauceLabsFleeceJacket in the top rank of the list
     And SauceLabsFleeceJacket price is = $49.99

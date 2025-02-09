@@ -116,27 +116,39 @@ class InventoryElementsPage {
     addToCart_Button(page: Page) {
         return page.click('button.btn_primary.btn_inventory');
     }
-    
-    remove_Button_FromGeneralProductPage(page: Page){
+
+    carteBadge(page: Page) {
+        return page.locator('span.shopping_cart_badge');
+    }
+
+    remove_Button_FromGeneralProductPage(page: Page) {
         return page.click('button.btn_primary.btn_inventory');
     }
 
-    remove_Button(page: Page){
+    remove_Button(page: Page) {
         return page.click('button.btn_secondary.btn_inventory', { force: true });
     }
 
-    
+
     // -------------------
 
-    cart_Button(page: Page){
+    cart_Button(page: Page) {
         return page.locator('path')
     }
 
-    counterShoppingCart(page: Page){
+    counterShoppingCart(page: Page) {
         return page.locator('span.shopping_cart_badge');
     }
-    
 
+     // -------------------
+
+    productSortContainer(page: Page) {
+        return page.locator("select.product_sort_container");
+    }
+    
+    SauceLabsFleeceJacketPrice(page: Page) {
+        return page.locator("div.inventory_item_price");
+    }
 
 }
 export default InventoryElementsPage;

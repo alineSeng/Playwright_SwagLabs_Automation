@@ -1,9 +1,10 @@
 import { Before, Given, When, Then } from '@cucumber/cucumber';
-import { add_to_cart, check_AllTheThingsTShirtRed_ImageLink, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, counter_cart, remove_from_cart, remove_from_cart_from_generalPage, } from '../Inventory/InventoryFunctionsPage';
+import { add_to_cart, carteBadge, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, counter_cart, productSortContainer, remove_from_cart, remove_from_cart_from_generalPage, sauceLabsFleeceJacket_Item, SauceLabsFleeceJacketPrice, } from '../Inventory/InventoryFunctionsPage';
 import { chromium, Browser, Page, expect } from '@playwright/test';
 import { login } from '../Login/LoginFunctionsPage';
 import './hooks';
 import { features } from 'process';
+import { time } from 'console';
 
 let browser: Browser;
 let page: Page;
@@ -45,36 +46,52 @@ When('the user click on SauceLabsBackpack "REMOVE" button', async function () {
     await add_to_cart(this.page)
     await remove_from_cart_from_generalPage(this.page)
     //await expect(remove_from_cart_from_generalPage).toContain("REMOVE")
-
 });
 
-
-
 When('1 quantity is adding to cart', async function () {
-    //let compteur: void;
-    //compteur = await counter_cart(this.page);
-    //expect(compteur).toBe(1);
-
-    // Attendre que le badge du panier apparaisse
-    const cartBadge = this.page.locator('span.shopping_cart_badge');
-    await cartBadge.waitFor({ state: 'visible' });
-
-    // Récupérer le texte à l'intérieur du badge
+    const cartBadge = await carteBadge(this.page); // Récupérer le locator Playwright
+    const cartClick = await cartBadge.click();
     const cartCount = await cartBadge.innerText();
-
-    // Vérifier que le badge affiche bien "1"
     expect(parseInt(cartCount)).toBe(1);
 });
 
 When('the cart should be empty', async function () {
-    //await expect(remove_from_cart_from_generalPage).toContain("REMOVE")
-      // Attendre que le badge du panier apparaisse
-      const cartBadge = this.page.locator('span.shopping_cart_badge');
-      await cartBadge.waitFor({ state: 'visible' });
-  
-      // Récupérer le texte à l'intérieur du badge
-      const cartCount = await cartBadge.innerText();
-  
-      // Vérifier que le badge affiche bien "0"
-      expect(parseInt(cartCount)).toBeNull();
+
+    const cartBadge = await carteBadge(this.page);
+    const cartCount = await cartBadge.innerText();
+    expect(parseInt(cartCount)).toBe(3);
+});
+
+
+When('the user select the filter on the "Price high to low" option', async function () {
+    const productSortContainers = await productSortContainer(this.page);
+    await productSortContainers.waitFor({ state: 'visible' });
+    await productSortContainers.click();
+    await productSortContainers.selectOption('hilo');
+    await productSortContainers.click();
+
+
+    // L'element d'ouvre mais ne click pas sur l'option
+    //await this.page.locator('[data-test="product-sort-container"]').selectOption('hilo');
+    await this.page.screenshot({ path: 'dropdown_clicked.png' });
+    
+});
+
+
+When('the product list should be sorted in descending order of the price', async function () {
+    const productSortContainers = await productSortContainer(this.page);
+    await productSortContainers.waitFor({ state: 'visible' });
+    await productSortContainers.click();
+    await productSortContainers.selectOption('hilo');
+    await productSortContainers.click();
+
+    // So we can see SauceLabsFleeceJacket in the top rank of the list
+    const firstProductTitle = await sauceLabsFleeceJacket_Item(this.page);
+    //await this.page.firstProductTitle.innerText();
+    expect(firstProductTitle).toHaveText('Sauce Labs Fleece Jacket');
+    // SauceLabsFleeceJacket price is = $49.99
+    const LabsFleeceJacketPrice = await SauceLabsFleeceJacketPrice(this.page);
+    expect(LabsFleeceJacketPrice).toHaveText('$49.99');
+    // we can see SauceLabsBackpack in the second rank of the list
+    // SauceLabsBackpack price is = $29.99
 });

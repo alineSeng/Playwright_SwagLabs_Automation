@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-  testDir: './StepsForTests/*.steps/ts', //  Modifier pour pointer vers les fichiers Gherkin
+  testDir: '../*.spec.ts', //  Modifier pour pointer vers les fichiers Gherkin
   testMatch: '**/*.feature', //  Indiquer à Playwright de chercher des fichiers `.feature`
 
   fullyParallel: true,

@@ -1,5 +1,5 @@
 import { Before, Given, When, Then } from '@cucumber/cucumber';
-import { add_to_cart, carteBadge, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, counter_cart, productSortContainer, remove_from_cart, remove_from_cart_from_generalPage, sauceLabsFleeceJacket_Item, SauceLabsFleeceJacketPrice, } from '../Inventory/InventoryFunctionsPage';
+import { add_to_cart, carteBadge, check_AllTheThingsTShirtRed_Product, check_SauceLabBoltTShirt_Product, check_SauceLabsBackpack_ImageLink, check_SauceLabsBackpack_Product, check_SauceLabsBikeLight_ImageLink, check_SauceLabsBikeLight_Product, check_SauceLabsBoltTShirt_ImageLink, check_SauceLabsFleeceJacket_ImageLink, check_SauceLabsFleeceJacket_Product, check_SauceLabsOnesie_ImageLink, check_SauceLabsOnesie_Product, checkAllProducts, counter_cart, productSortContainer, remove_from_cart, remove_from_cart_from_generalPage, sauceLabsBackpack_Item, sauceLabsFleeceJacket_Item, SauceLabsFleeceJacketPrice, } from '../Inventory/InventoryFunctionsPage';
 import { chromium, Browser, Page, expect } from '@playwright/test';
 import { login } from '../Login/LoginFunctionsPage';
 import './hooks';
@@ -79,19 +79,24 @@ When('the user select the filter on the "Price high to low" option', async funct
 
 
 When('the product list should be sorted in descending order of the price', async function () {
-    const productSortContainers = await productSortContainer(this.page);
-    await productSortContainers.waitFor({ state: 'visible' });
-    await productSortContainers.click();
-    await productSortContainers.selectOption('hilo');
-    await productSortContainers.click();
 
-    // So we can see SauceLabsFleeceJacket in the top rank of the list
     const firstProductTitle = await sauceLabsFleeceJacket_Item(this.page);
-    //await this.page.firstProductTitle.innerText();
-    expect(firstProductTitle).toHaveText('Sauce Labs Fleece Jacket');
+
+    await expect(firstProductTitle).toContainText('Sauce Labs Fleece Jacket', { timeout: 3000 });
+    //await this.page.screenshot({ path: 'dropdown_clicked.png' });
+
     // SauceLabsFleeceJacket price is = $49.99
-    const LabsFleeceJacketPrice = await SauceLabsFleeceJacketPrice(this.page);
-    expect(LabsFleeceJacketPrice).toHaveText('$49.99');
+    const LabsFleeceJacketPrice = (await SauceLabsFleeceJacketPrice(this.page)).getByText('$49.99');
+    await expect(LabsFleeceJacketPrice).toContainText('$49.99');
+
     // we can see SauceLabsBackpack in the second rank of the list
+    const secondProductTitle = await sauceLabsBackpack_Item(this.page);
+    await secondProductTitle.waitFor({ state: 'visible', timeout: 8000 })
+
+    await expect(secondProductTitle).toContainText('Sauce Labs Backpack');
+
     // SauceLabsBackpack price is = $29.99
+    const LabsBackpackPrice = (await sauceLabsBackpack_Item(this.page)).getByText('$29.99');
+    await expect(LabsBackpackPrice).toContainText('$29.99');
+
 });

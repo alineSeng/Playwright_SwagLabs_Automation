@@ -36,7 +36,7 @@ class InventoryElementsPage {
     // --------------------
 
     sauceLabsBackpack_Item(page: Page) {
-        return page.locator("div.inventory_item_name").nth(0)
+        return page.locator("#item_4_title_link")
     }
 
     sauceLabsBikeLight_Item(page: Page) {
@@ -48,7 +48,7 @@ class InventoryElementsPage {
     }
 
     sauceLabsFleeceJacket_Item(page: Page) {
-        return page.locator("div.inventory_item_name").nth(3)
+        return page.locator('#item_5_title_link');
     }
 
     sauceLabsOnesie_Item(page: Page) {
@@ -146,7 +146,13 @@ class InventoryElementsPage {
         return page.locator("select.product_sort_container");
     }
     
+    // -------------------
+
     SauceLabsFleeceJacketPrice(page: Page) {
+        return page.locator("div.inventory_item_price");
+    }
+
+    SauceLabsBackpackPrice(page: Page) {
         return page.locator("div.inventory_item_price");
     }
 

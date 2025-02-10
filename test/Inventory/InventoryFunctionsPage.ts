@@ -116,3 +116,11 @@ export async function SauceLabsFleeceJacketPrice(page: Page) {
     return inventoryElementsPage.SauceLabsFleeceJacketPrice(page);
 }
 
+
+export async function sauceLabsBackpack_Item(page: Page) {
+    return inventoryElementsPage.sauceLabsBackpack_Item(page);
+}
+
+export async function SauceLabsBackpackPrice(page: Page) {
+    return inventoryElementsPage.SauceLabsBackpackPrice(page);
+}

@@ -18,6 +18,19 @@ export async function checkoutInformation(page: Page, firstName: string, lastNam
 
 }
 
+export async function enterCheckoutInformation(page: Page, firstName: string, lastName: string, postalCode: string) {
+
+    await page.fill(checkoutElementsPage.firstName(), firstName);
+    await page.fill(checkoutElementsPage.lastName(), lastName);
+    await page.fill(checkoutElementsPage.postalCode(), postalCode);
+
+
+}
+
+export async function clickToContinue(page: Page) {
+    await checkoutElementsPage.continueButton(page).click();
+}
+
 export async function check_summary_quantity_product(page: Page){
     await expect(checkoutElementsPage.summary_quantity(page)).toHaveText('1')
 }

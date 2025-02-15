@@ -88,6 +88,9 @@ export async function add_to_cart(page: Page) {
 export async function carteBadge(page: Page) {
     return inventoryElementsPage.carteBadge(page);
 }
+export async function carteBadge2(page: Page) {
+    return inventoryElementsPage.carteBadge2(page);
+}
 
 export async function remove_from_cart_from_generalPage(page: Page) {
     await inventoryElementsPage.remove_Button_FromGeneralProductPage(page);
@@ -105,6 +108,9 @@ export async function productSortContainer(page: Page) {
     return inventoryElementsPage.productSortContainer(page);
 }
 
+export async function goToCart(page: Page) {
+    return inventoryElementsPage.cart_Button(page);
+}
 
 // ----------------------
 
@@ -123,4 +129,12 @@ export async function sauceLabsBackpack_Item(page: Page) {
 
 export async function SauceLabsBackpackPrice(page: Page) {
     return inventoryElementsPage.SauceLabsBackpackPrice(page);
+}
+
+export async function sauceLabsOnesie_Item(page: Page) {
+    return inventoryElementsPage.sauceLabsOnesie_Item(page);
+}
+
+export async function SauceLabsOnesiePrice(page: Page) {
+    return inventoryElementsPage.SauceLabsOnesiePrice(page);
 }

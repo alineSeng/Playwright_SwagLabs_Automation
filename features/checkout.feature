@@ -8,4 +8,4 @@ Scenario: As a user, I want to succeed in my order process
     And the user enter his firstname "Line", his last name "Sg", and his postal code "59000"
     And the user click on "Continue"
     And the user click on "Finish"
-    Then a confitmation message "Thank you for your order!" should be displayed 
+    Then a confirmation message "Thank you for your order!" should be displayed 

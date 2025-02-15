@@ -52,7 +52,7 @@ class InventoryElementsPage {
     }
 
     sauceLabsOnesie_Item(page: Page) {
-        return page.locator("div.inventory_item_name").nth(4)
+        return page.locator("#item_2_title_link")
     }
 
     testAllTheThingsTShirtRed_Item(page: Page) {
@@ -121,12 +121,17 @@ class InventoryElementsPage {
         return page.locator('span.shopping_cart_badge');
     }
 
+    carteBadge2(page: Page) {
+        return page.locator('span.fa-layers-counter.shopping_cart_badge');
+    }
+
+    
     remove_Button_FromGeneralProductPage(page: Page) {
         return page.click('button.btn_primary.btn_inventory');
     }
 
     remove_Button(page: Page) {
-        return page.click('button.btn_secondary.btn_inventory', { force: true });
+        return page.click('button.btn_secondary.btn_inventory', {force: true});
     }
 
 
@@ -137,7 +142,7 @@ class InventoryElementsPage {
     }
 
     counterShoppingCart(page: Page) {
-        return page.locator('span.shopping_cart_badge');
+        return page.locator('span.fa-layers-counter.shopping_cart_badge');
     }
 
      // -------------------
@@ -153,6 +158,10 @@ class InventoryElementsPage {
     }
 
     SauceLabsBackpackPrice(page: Page) {
+        return page.locator("div.inventory_item_price");
+    }
+
+    SauceLabsOnesiePrice(page: Page) {
         return page.locator("div.inventory_item_price");
     }
 

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 230295200
+              "duration": 189379299
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 310262699
+              "duration": 278697000
             }
           },
           {
@@ -35,9 +35,12 @@
             "keyword": "And ",
             "line": 5,
             "name": "the user has added items selected to the cart",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:6"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 289121499
             }
           },
           {
@@ -45,9 +48,12 @@
             "keyword": "And ",
             "line": 6,
             "name": "the user click on the cart icon",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:10"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 132027899
             }
           },
           {
@@ -55,9 +61,12 @@
             "keyword": "When ",
             "line": 7,
             "name": "the user click on the \"Checkout\" button",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:16"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 97429900
             }
           },
           {
@@ -65,9 +74,12 @@
             "keyword": "And ",
             "line": 8,
             "name": "the user enter his firstname \"Line\", his last name \"Sg\", and his postal code \"59000\"",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:21"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 152258299
             }
           },
           {
@@ -75,9 +87,12 @@
             "keyword": "And ",
             "line": 9,
             "name": "the user click on \"Continue\"",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:26"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 76719499
             }
           },
           {
@@ -85,19 +100,25 @@
             "keyword": "And ",
             "line": 10,
             "name": "the user click on \"Finish\"",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:30"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 92219600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "a confitmation message \"Thank you for your order!\" should be displayed",
+            "name": "a confirmation message \"Thank you for your order!\" should be displayed",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:34"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 42997500
             }
           },
           {
@@ -105,7 +126,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 61996199
+              "duration": 81092700
             }
           }
         ],
@@ -135,7 +156,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 216642500
+              "duration": 244088500
             }
           },
           {
@@ -148,7 +169,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 252976900
+              "duration": 277213999
             }
           },
           {
@@ -161,7 +182,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116562700
+              "duration": 67427600
             }
           },
           {
@@ -169,7 +190,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 91351900
+              "duration": 74371499
             }
           }
         ],
@@ -188,7 +209,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 229104800
+              "duration": 222226800
             }
           },
           {
@@ -201,7 +222,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246659899
+              "duration": 295283300
             }
           },
           {
@@ -214,7 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 326426300
+              "duration": 204652400
             }
           },
           {
@@ -227,7 +248,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 96388399
+              "duration": 77488399
             }
           },
           {
@@ -235,7 +256,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 62745699
+              "duration": 67190000
             }
           }
         ],
@@ -254,7 +275,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 196000800
+              "duration": 178142300
             }
           },
           {
@@ -267,7 +288,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 254887899
+              "duration": 272378599
             }
           },
           {
@@ -280,7 +301,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246414099
+              "duration": 236305100
             }
           },
           {
@@ -293,7 +314,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 91954300
+              "duration": 93021800
             }
           },
           {
@@ -306,7 +327,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3791299
+              "duration": 4370099
             }
           },
           {
@@ -314,7 +335,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75119299
+              "duration": 67046799
             }
           }
         ],
@@ -323,17 +344,17 @@
       },
       {
         "description": "",
-        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsonesie)-once-from-the-cart",
+        "id": "inventory-functions;as-a-user,-i-want-to-remove-items-(saucelabsbackpack)-once-from-the-cart",
         "keyword": "Scenario",
         "line": 19,
-        "name": "As a user, I want to remove items (SauceLabsOnesie) once from the cart",
+        "name": "As a user, I want to remove items (SauceLabsBackpack) once from the cart",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 184471200
+              "duration": 250500799
             }
           },
           {
@@ -346,17 +367,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 260760699
+              "duration": 275486400
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 21,
-            "name": "the user click on SauceLabsOnesie \"ADD TO CART\" button",
+            "name": "the user click on SauceLabsBackpack \"ADD TO CART\" button",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:41"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 259984099
             }
           },
           {
@@ -364,31 +388,35 @@
             "keyword": "And ",
             "line": 22,
             "name": "the user click on the cart icon",
+            "match": {
+              "location": "test\\StepsForTests\\checkout.steps.ts:10"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 127643699
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "the user click on the \"REMOVE\" button for the product",
+            "name": "the user click on the \"REMOVE\" button once from the detail cart page",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:66"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "failed",
+              "duration": 5019828699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 24,
-            "name": "the cart should be empty",
-            "match": {
-              "location": "test\\StepsForTests\\inventory.steps.ts:58"
-            },
+            "name": "the cart should be empty once from the detail cart page",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           },
@@ -397,7 +425,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 53135499
+              "duration": 63028300
             }
           }
         ],
@@ -416,7 +444,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 184540699
+              "duration": 194980200
             }
           },
           {
@@ -429,7 +457,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 264324199
+              "duration": 256200100
             }
           },
           {
@@ -438,11 +466,11 @@
             "line": 28,
             "name": "the user select the filter on the \"Price high to low\" option",
             "match": {
-              "location": "test\\StepsForTests\\inventory.steps.ts:66"
+              "location": "test\\StepsForTests\\inventory.steps.ts:81"
             },
             "result": {
               "status": "passed",
-              "duration": 377112699
+              "duration": 366538599
             }
           },
           {
@@ -451,52 +479,11 @@
             "line": 29,
             "name": "the product list should be sorted in descending order of the price",
             "match": {
-              "location": "test\\StepsForTests\\inventory.steps.ts:81"
+              "location": "test\\StepsForTests\\inventory.steps.ts:96"
             },
             "result": {
-              "status": "failed",
-              "duration": 5015959999,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\CSLTRomainVivien\\Documents\\SwagLabs_TestAuto1\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:569:17)\n    at processTimers (node:internal/timers:512:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "we can see SauceLabsFleeceJacket in the top rank of the list",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "SauceLabsFleeceJacket price is = $49.99",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 32,
-            "name": "we can see SauceLabsBackpack in the second rank of the list",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
-            "name": "SauceLabsBackpack price is = $29.99",
-            "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 10312100
             }
           },
           {
@@ -504,7 +491,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 56134100
+              "duration": 51194099
             }
           }
         ],
@@ -515,7 +502,7 @@
         "description": "",
         "id": "inventory-functions;as-a-user,-i-want-to-sorting-products-from-lowest-to-highest-price",
         "keyword": "Scenario",
-        "line": 35,
+        "line": 32,
         "name": "As a user, I want to sorting products from lowest to highest price",
         "steps": [
           {
@@ -523,80 +510,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 186930999
+              "duration": 184929700
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 36,
+            "line": 33,
             "name": "Log in as user",
             "match": {
               "location": "test\\StepsForTests\\login.steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 249929500
+              "duration": 239494200
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 37,
-            "name": "the user select the filter on the \"Price (low to high)\" option",
+            "line": 34,
+            "name": "the user select the filter on the \"Price low to high\" option",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:120"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 261786599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 35,
             "name": "the product list should be sorted in ascending order of the price",
+            "match": {
+              "location": "test\\StepsForTests\\inventory.steps.ts:131"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 39,
-            "name": "we can see SauceLabsBackpack in the top rank of the list",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 40,
-            "name": "SauceLabsBackpack price is = $29.99",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 41,
-            "name": "we can see SauceLabsFleeceJacket in the second rank of the list",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 42,
-            "name": "SauceLabsFleeceJacket price is = $49.99",
-            "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 11117900
             }
           },
           {
@@ -604,7 +557,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 59396999
+              "duration": 62465499
             }
           }
         ],
@@ -634,7 +587,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 177999300
+              "duration": 189260999
             }
           },
           {
@@ -647,7 +600,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 265497399
+              "duration": 286644200
             }
           },
           {
@@ -655,7 +608,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 59522199
+              "duration": 58123399
             }
           }
         ],
@@ -674,7 +627,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 214758900
+              "duration": 175209499
             }
           },
           {
@@ -687,7 +640,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 257554100
+              "duration": 244685499
             }
           },
           {
@@ -695,7 +648,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 60327300
+              "duration": 53841100
             }
           }
         ],

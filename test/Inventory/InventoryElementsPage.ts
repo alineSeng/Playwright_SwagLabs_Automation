@@ -131,7 +131,7 @@ class InventoryElementsPage {
     }
 
     remove_Button(page: Page) {
-        return page.click('button.btn_secondary.btn_inventory', {force: true});
+        return page.click('button.btn_secondary.cart_button', {force: true});
     }
 
 
